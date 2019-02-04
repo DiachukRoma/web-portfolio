@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: url('MontserratAlternates-SemiBold.otf');
+	font-weight: 600;
+}
+@font-face {
+	font-family: 'SourceCodePro';
+	src: url('SourceCodePro-Medium.otf');
+	font-weight: 400;
+}
