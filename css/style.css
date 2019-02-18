@@ -25,6 +25,9 @@
  	box-shadow: 0 0 50px 10px #000;
  	font-family: 'SourceCodePro';
  	font-size: 48px;
+    position: relative;
+    z-index: 10;
+    background-color: #101010;
  }
 .block p{
 	margin: 40px 60px;
@@ -53,4 +56,42 @@
 }
 .iteMenu{
 	display: none;
+	width: 50%;
+    height: 60%;
+    background-color: #fff;
+    color: #000;
+    position: relative;
+    z-index: 5;
+    font-size: 20px;
+}
+.iteMenu p{
+	padding: 0 100px;
+}
+.iteMenu p:first-child, .iteMenu ul{
+	padding: 60px 100px 0 100px;
+}
+.iteMenu ul li{
+	list-style: none;
+    padding: 5px 0;
+}
+.iteMenu ul li a, .iteMenu a{
+	color: #696969;
+	text-decoration: none;
+}
+.mark{
+	font-family: 'Montserrat';
+    font-size: 200px;
+    color: #000;
+    position: absolute;
+    z-index: 2;
+    bottom: 25%;
+}
+.iteMenu.active{
+	/*display: block;*/
+    animation: slide 1.5s forwards;
+}
+@keyframes slide {
+    100% { 
+    	left: 0; 
+    }
 }
